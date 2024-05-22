@@ -28,8 +28,9 @@ header {
   text-align: center;
 }
 
-header > img {
+#texts img {
   padding: 3.2rem 0 9.6rem;
+  max-width: 5.8rem;
 }
 
 header figure img {
@@ -57,6 +58,10 @@ h1 {
   background-color: #fff;
   padding: 7.2rem 4.2rem;
   gap: 2.4;
+}
+
+#imgForm{
+  display: none;
 }
 
 h2 {
@@ -163,3 +168,65 @@ footer {
 footer p {
   color: #fff;
 }
+
+
+@media (min-width: 768px) {
+
+  /* Header */
+  header{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    padding: 0 3.2rem 9.6rem;
+  }
+
+  #texts{
+    display: flex;
+    gap: 17.6rem;
+    flex-direction: column;
+    justify-content: end;
+  }
+
+  header p{
+    font-size: 1.8rem;
+  }
+
+  header h1{
+  font-size: 5.8rem;
+
+  }
+
+  header figure{
+    max-width: 50%;
+  }
+
+  header figure img{
+    padding: 0;
+  }
+
+  #texts img {
+  padding: 0;
+}
+
+/* Main */
+
+#contentSection{
+  flex-direction: row;
+  padding: 6.4rem 10.4rem;
+}
+
+/* form */
+
+#formSection{
+  padding: 8.8rem;
+}
+
+form fieldset{
+  width: 45%;
+}
+
+#formSection{
+  background-image: url(assets/image\ 11976.png);
+  background-repeat: no-repeat;
+  background-position: bottom right;
+}}
