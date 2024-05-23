@@ -20,6 +20,7 @@
   display: flex;
   flex-direction: column;
   min-width: 4.3rem;
+  margin: auto;
 }
 
 /* Configurações do Header */
