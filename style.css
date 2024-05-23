@@ -168,7 +168,7 @@ footer p {
   color: #fff;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1000px) {
   /* Header */
   header {
     display: flex;
