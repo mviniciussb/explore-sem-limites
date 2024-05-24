@@ -23,20 +23,24 @@
   margin: auto;
 }
 
-/* Configurações do Header */
-
-header {
-  text-align: center;
+body {
+  background-color: #f9f4fb;
 }
+
+/* Configurações do Header */
 
 #texts img {
   padding: 3.2rem 0 9.6rem;
   max-width: 5.8rem;
 }
 
-header figure img {
+header {
+  text-align: center;
+}
+
+header img {
   width: 100%;
-  padding: 0 4rem 1.8rem;
+  margin-bottom: 3.5rem;
 }
 
 h1 {
@@ -51,7 +55,7 @@ h1 {
   display: flex;
   flex-direction: column;
   gap: 4.8rem;
-  background-color: #312d64;
+  background: linear-gradient(96deg, #343193 0%, #302c63 99.68%);
   padding: 5rem 4rem;
 }
 
@@ -59,10 +63,6 @@ h1 {
   background-color: #fff;
   padding: 7.2rem 4.2rem;
   gap: 2.4;
-}
-
-#imgForm {
-  display: none;
 }
 
 h2 {
@@ -176,27 +176,41 @@ footer p {
     flex-direction: row-reverse;
     justify-content: space-between;
     padding: 0 3.2rem 9.6rem 9rem;
+    text-align: start;
+  }
+
+  header img {
+    max-height: 73em;
+    max-width: 72rem;
   }
 
   #texts {
     display: flex;
-    gap: 17.6rem;
     flex-direction: column;
-    justify-content: end;
+    margin-top: 31.2rem;
+    align-items: flex-start;
+  }
+
+  #texts div {
+    max-width: 554px;
+  }
+
+  #texts a img:hover {
+    transition: 1ms;
+    filter: brightness(0.5) saturate(2) hue-rotate(340deg);
   }
 
   header p {
-    font-size: 1.8rem;
+    color: #312d64;
+    font-family: Mulish;
+    font-size: 3.2rem;
+    font-weight: 600;
+    margin-bottom: 18rem;
   }
 
   header h1 {
     font-size: 5.8rem;
   }
-
-  header figure {
-    max-width: 50%;
-  }
-
   header figure img {
     padding: 0;
   }
@@ -210,6 +224,17 @@ footer p {
   #contentSection {
     flex-direction: row;
     padding: 6.4rem 10.4rem;
+    height: 576px;
+    font-size: 1.9rem;
+  }
+
+  article {
+    padding: 3.2rem;
+    max-width: 36rem;
+  }
+
+  .divText {
+    gap: 2.4rem;
   }
 
   /* form */
@@ -226,5 +251,12 @@ footer p {
     background-image: url(assets/image\ 11976.png);
     background-repeat: no-repeat;
     background-position: bottom right;
+  }
+
+  footer {
+    max-width: 1440px;
+    background-image: url(assets/image\ 11976.png);
+    background-repeat: no-repeat;
+    background-position: right;
   }
 }
